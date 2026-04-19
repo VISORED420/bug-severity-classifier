@@ -1,0 +1,14 @@
+# Pinned version constraints assume Python 3.14. The originals
+# (scikit-learn==1.4.0 etc.) pre-date 3.14 and have no binary wheels
+# for it, so we use minimum floors that do ship 3.14 wheels.
+streamlit>=1.40
+scikit-learn>=1.6
+pandas>=2.2
+numpy>=2.1
+nltk>=3.9
+plotly>=5.22
+joblib>=1.4
+matplotlib>=3.9
+seaborn>=0.13
+imbalanced-learn>=0.13
+pytest>=8.2

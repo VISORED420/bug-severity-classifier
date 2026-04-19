@@ -1,0 +1,65 @@
+# ---------------------------------------------------------------------------
+# Data and artifacts
+# ---------------------------------------------------------------------------
+# Raw MSR / Bugzilla dumps are hundreds of MB and have their own license
+# (CC-BY-SA); do not republish. Processed CSVs are derived data — also skip.
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Trained models — rf_model.pkl alone is >2 GB, over GitHub's 100 MB limit.
+models/*.pkl
+models/*.png
+models/test_split.csv
+# metrics.json IS tracked — it's small and useful (keeps the README table honest).
+!models/metrics.json
+
+# ---------------------------------------------------------------------------
+# Secrets / local config
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+# Claude Code local settings — per-user permissions, not meant to be shared.
+.claude/
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# IDE / OS
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
