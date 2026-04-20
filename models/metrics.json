@@ -8,18 +8,18 @@
     "Normal",
     "Trivial"
   ],
-  "n_train": 132271,
-  "n_test": 33068,
+  "n_train": 224,
+  "n_test": 56,
   "use_smote": false,
   "results": {
     "Logistic Regression": {
-      "accuracy": 0.2707148905286077,
-      "precision_macro": 0.23187760099474958,
-      "recall_macro": 0.35627630435290386,
-      "f1_macro": 0.20385171829811174,
-      "precision_weighted": 0.6129524127117922,
-      "recall_weighted": 0.2707148905286077,
-      "f1_weighted": 0.3038309714807662,
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "precision_weighted": 1.0,
+      "recall_weighted": 1.0,
+      "f1_weighted": 1.0,
       "per_class_f1": {
         "Blocker": 0.0,
         "Critical": 0.0,
@@ -31,13 +31,13 @@
       }
     },
     "Random Forest": {
-      "accuracy": 0.6680476593685738,
-      "precision_macro": 0.33202685627628015,
-      "recall_macro": 0.21488483904402517,
-      "f1_macro": 0.22795889428822072,
-      "precision_weighted": 0.5946095659882612,
-      "recall_weighted": 0.6680476593685738,
-      "f1_weighted": 0.6018509998309693,
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "precision_weighted": 1.0,
+      "recall_weighted": 1.0,
+      "f1_weighted": 1.0,
       "per_class_f1": {
         "Blocker": 0.0,
         "Critical": 0.0,
