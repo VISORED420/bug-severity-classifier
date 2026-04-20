@@ -293,6 +293,10 @@ def render_insights() -> None:
             + df.get("description", "").fillna("").astype(str)
         ).str.strip()
 
+    # Normalize severity values to title case to match SEVERITY_ORDER
+    if "severity" in df.columns:
+        df["severity"] = df["severity"].astype(str).str.strip().str.title()
+
     st.markdown(f"**Rows:** {len(df):,}  |  **Columns:** {len(df.columns)}")
 
     tab1, tab2, tab3, tab4 = st.tabs(
